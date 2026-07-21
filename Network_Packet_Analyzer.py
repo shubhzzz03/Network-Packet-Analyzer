@@ -59,18 +59,26 @@ def main():
     print("=" * 60)
     print(PROJECT)
     print("=" * 60)
-    print("Starting packet capture...")
-    print("Capturing 20 packets.\n")
 
     try:
-        sniff(prn=process_packet, store=False,count=20)
+        packet_count = int(input("Enter the number of packets to analyze: "))
+
+        print(f"\nStarting packet capture...")
+        print(f"Capturing {packet_count} packets...\n")
+
+        sniff(
+            prn=process_packet,
+            store=False,
+            count=packet_count
+        )
+
+        print(f"\nAnalysis completed. {packet_count} packets captured.")
+
+    except ValueError:
+        print("Please enter a valid number.")
 
     except PermissionError:
         print("\nRun this program as Administrator or Root.")
 
     except KeyboardInterrupt:
         print("\nPacket capture stopped.")
-
-
-if __name__ == "__main__":
-    main()
