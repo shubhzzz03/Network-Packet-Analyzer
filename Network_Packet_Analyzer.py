@@ -82,3 +82,6 @@ def main():
 
     except KeyboardInterrupt:
         print("\nPacket capture stopped.")
+        
+if __name__ == "__main__":
+    main()
