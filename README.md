@@ -25,6 +25,60 @@ cd CODSOFT_TASKSNO
 pip install scapy
 ```
 
+## Project Structure
+
+```
+Network_Packet_Analyzer/
+│── packet_analyzer.py
+│── README.md
+│── capture.log (generated after execution)
+```
+
+---
+
+## Technologies Used
+
+- Python 3
+- Scapy
+- Networking
+- Packet Sniffing
+- Cyber Security
+
+---
+
+## Supported Protocols
+
+- TCP
+- UDP
+- ICMP
+- IPv4
+- IPv6
+
+---
+
+## Learning Outcomes
+
+This project helped me learn:
+
+- Packet sniffing using Scapy
+- Network packet analysis
+- IP addressing
+- TCP/UDP communication
+- Command-line argument handling
+- Logging captured packets
+
+---
+
+## Future Improvements
+
+- Save packets in PCAP format
+- GUI using Tkinter
+- Protocol-wise statistics
+- Export results to CSV
+- Real-time traffic graphs
+
+---
+
 ## Usage
 ```bash
 # Capture indefinitely on the default interface (Ctrl+C to stop)
@@ -73,6 +127,11 @@ This tool is intended strictly for educational purposes and for use on networks
 you own or have explicit permission to monitor. Capturing traffic on networks
 without authorization may be illegal.
 
+## Acknowledgements
+
+- CodSoft Cyber Security Internship
+- Scapy Documentation
+- Python Community
+  
 ## Author
 Shubham Santosh Beloshe.
-Built as part of the CodSoft Cyber Security Virtual Internship — Task 1.
